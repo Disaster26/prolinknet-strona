@@ -1,0 +1,21 @@
+# ProlinkNET (PROLINKNET Sp. z o.o.)
+
+> Firma telekomunikacyjna z Zielonki pod Warszawą, działająca od 2003 roku na terenie całej Polski jako podwykonawca operatorów. Budowa i utrzymanie infrastruktury teleinformatycznej: radiolinie punkt - punkt i punkt - wielopunkt, światłowody, konstrukcje stalowe i maszty, utrzymanie sieci oraz outsourcing.
+
+## Dane kontaktowe
+- Telefon: 509 510 420, 22 257 85 22
+- E-mail: biuro@prolinknet.pl
+- Biuro: ul. Sowińskiego 4, 05-220 Zielonka
+- Siedziba: ul. Radzymińska 180, Stary Kraszew, 05-205 Klembów
+- NIP 1251626648, KRS 0000514566, REGON 147306133
+- Obszar działania: cała Polska
+
+## Usługi
+- [Radiolinie](https://prolinknet.pl/radiolinie/): wizja radiowa, uzgodnienia, dokumentacja, montaż konstrukcji, anten i modułów ODU/IDU, uruchomienie, pomiary transmisyjne, dokumentacja powykonawcza, serwis.
+- [Światłowody](https://prolinknet.pl/swiatlowody/): spawanie (spawarka Fujikura) i łączenie mechaniczne, pomiary reflektometrem, układanie, instalacja sieci, także w tunelach, modernizacja istniejących sieci.
+- [Konstrukcje stalowe](https://prolinknet.pl/konstrukcje-stalowe/): projekt, prefabrykacja i montaż konstrukcji wsporczych pod anteny, maszty, balustrady mostowe, cynkowanie, instalacje odgromowe, oznakowanie przeszkodowe, oceny stanu technicznego.
+- [Utrzymanie oraz outsourcing](https://prolinknet.pl/utrzymanie-i-outsourcing/): instalacja dodatkowych urządzeń, konfiguracja, serwis, konserwacja, usuwanie awarii systemów radioliniowych.
+
+## Firma
+- [O firmie](https://prolinknet.pl/o-firmie/): doświadczenie przy sieciach GSM/UMTS/LTE, partnerzy: Emitel, NEC, Plus, Orange, Netia, Exatel.
+- [Kontakt i formularz zapytania](https://prolinknet.pl/kontakt/)

@@ -1,0 +1,6 @@
+_test/
+_lh/
+_zrzuty/
+*.zip
+__pycache__/
+_narzedzia/*.woff2

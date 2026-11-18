@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /wyslij.php
+
+Sitemap: https://prolinknet.pl/sitemap.xml
