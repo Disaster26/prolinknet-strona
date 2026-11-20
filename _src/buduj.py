@@ -9,12 +9,12 @@ DOM = 'https://prolinknet.pl'
 WER = '1'                                  # zmienić po edycji style.css/app.js (cache przeglądarek)
 DZIS = datetime.date.today().isoformat()
 
-TEL1, TEL1H = '509 510 420', '+48509510420'
+TEL1, TEL1H = '733 800 337', '+48733800337'
 TEL2, TEL2H = '22 257 85 22', '+48222578522'
 MAIL = 'biuro@prolinknet.pl'
-ADR = '05-220 Zielonka, ul. Sowińskiego 4'
-MAPA = 'https://www.google.com/maps?q=Sowi%C5%84skiego+4,+05-220+Zielonka&z=15&output=embed'
-MAPA_LINK = 'https://www.google.com/maps/search/?api=1&query=Sowi%C5%84skiego+4%2C+05-220+Zielonka'
+ADR = 'ul. Radzymińska 180, 05-205 Stary Kraszew'
+MAPA = 'https://www.google.com/maps?q=Radzymi%C5%84ska+180,+05-205+Stary+Kraszew&z=15&output=embed'
+MAPA_LINK = 'https://www.google.com/maps/search/?api=1&query=Radzymi%C5%84ska+180%2C+05-205+Stary+Kraszew'
 
 # ---------------------------------------------------------------- drobne elementy
 LM = '<svg class="link-mark" viewBox="0 0 64 12" aria-hidden="true"><circle cx="6" cy="6" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 6h40" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4"/><circle cx="58" cy="6" r="4.5" fill="currentColor"/></svg>'
@@ -54,12 +54,10 @@ def org():
         'url': DOM + '/', 'telephone': TEL1H, 'email': MAIL,
         'logo': {'@type': 'ImageObject', 'url': DOM + '/ikony/logo-prolinknet-512.png', 'width': 512, 'height': 512},
         'image': DOM + '/img/og-prolinknet.jpg',
-        'address': {'@type': 'PostalAddress', 'streetAddress': 'ul. Sowińskiego 4', 'postalCode': '05-220', 'addressLocality': 'Zielonka', 'addressRegion': 'mazowieckie', 'addressCountry': 'PL'},
-        'geo': {'@type': 'GeoCoordinates', 'latitude': 52.3142, 'longitude': 21.1477},
+        'address': {'@type': 'PostalAddress', 'streetAddress': 'ul. Radzymińska 180', 'postalCode': '05-205', 'addressLocality': 'Stary Kraszew', 'addressRegion': 'mazowieckie', 'addressCountry': 'PL'},
         'areaServed': {'@type': 'Country', 'name': 'Polska'}, 'foundingDate': '2003',
         'taxID': '1251626648', 'vatID': 'PL1251626648', 'identifier': [{'@type': 'PropertyValue', 'propertyID': 'KRS', 'value': '0000514566'}, {'@type': 'PropertyValue', 'propertyID': 'REGON', 'value': '147306133'}],
-        'contactPoint': [{'@type': 'ContactPoint', 'telephone': TEL1H, 'contactType': 'customer service', 'areaServed': 'PL', 'availableLanguage': 'pl'},
-                         {'@type': 'ContactPoint', 'telephone': TEL2H, 'contactType': 'customer service', 'areaServed': 'PL', 'availableLanguage': 'pl'}],
+        'contactPoint': [{'@type': 'ContactPoint', 'telephone': TEL1H, 'contactType': 'customer service', 'areaServed': 'PL', 'availableLanguage': 'pl'}],
         'knowsAbout': ['radiolinie', 'sieci radiowe punkt - punkt', 'punkt - wielopunkt', 'spawanie światłowodów', 'pomiary reflektometrem', 'konstrukcje wsporcze pod anteny', 'maszty telekomunikacyjne', 'GSM/UMTS/LTE'],
     }
 def website():
@@ -133,11 +131,11 @@ def strona(B, prod, sciezka, tytul, opis, tresc, *, aktywne=None, okr=None, ld=N
     <div>
       <a class="logo" href="{B}" aria-label="ProlinkNET, strona główna"><b>Pro</b><span>linkNET</span><i></i></a>
       <p style="margin:14px 0 0;max-width:340px">Radiolinie, światłowody, konstrukcje stalowe oraz utrzymanie sieci telekomunikacyjnych. Działamy na terenie całej Polski od 2003 roku.</p>
-      <p class="rej">PROLINKNET Sp. z o.o. · siedziba: ul. Radzymińska 180, Stary Kraszew, 05-205 Klembów · NIP 1251626648 · KRS 0000514566 · REGON 147306133</p>
+      <p class="rej">PROLINKNET Sp. z o.o. · NIP 1251626648 · KRS 0000514566 · REGON 147306133</p>
     </div>
     <div><p class="sth">Oferta</p><ul><li><a href="{B}radiolinie/">Radiolinie</a></li><li><a href="{B}swiatlowody/">Światłowody</a></li><li><a href="{B}konstrukcje-stalowe/">Konstrukcje stalowe</a></li><li><a href="{B}utrzymanie-i-outsourcing/">Utrzymanie i outsourcing</a></li></ul></div>
     <div><p class="sth">Firma</p><ul><li><a href="{B}o-firmie/">O firmie</a></li><li><a href="{B}o-firmie/#partnerzy">Partnerzy</a></li><li><a href="{B}kontakt/">Kontakt</a></li><li><a href="{B}polityka-prywatnosci/">Polityka prywatności</a></li></ul></div>
-    <div><p class="sth">Kontakt</p><ul><li><a href="tel:{TEL1H}">{TEL1}</a></li><li><a href="tel:{TEL2H}">{TEL2}</a></li><li><a href="mailto:{MAIL}">{MAIL}</a></li><li><span>{ADR}</span></li></ul></div>
+    <div><p class="sth">Kontakt</p><ul><li><a href="tel:{TEL1H}">{TEL1}</a></li><li><a href="mailto:{MAIL}">{MAIL}</a></li><li><span>{ADR}</span></li></ul></div>
     <div class="linia"><span>© <span data-rok>{datetime.date.today().year}</span> ProlinkNET</span>{BADGE}</div>
   </div>
 </footer>
@@ -193,24 +191,23 @@ def formularz(B, prod, fid, naglowek_tag='h2'):
 def dane_kontaktowe():
     return f'''<ul class="dane">
       <li><a href="tel:{TEL1H}">{I_TEL}{TEL1}</a></li>
-      <li><a href="tel:{TEL2H}">{I_TEL}{TEL2}</a></li>
       <li><a href="mailto:{MAIL}">{I_MAIL}{MAIL}</a></li>
-      <li><span>{I_PIN}Biuro: {ADR}</span></li>
+      <li><span>{I_PIN}{ADR}</span></li>
     </ul>'''
 
 def mapa(h=320):
-    return f'''<div class="mapa" style="height:{h}px" data-src="{MAPA}" data-tytul="Mapa dojazdu: Zielonka, ul. Sowińskiego 4"><div class="mapa-z"><p>Biuro ProlinkNET: {ADR}</p><button class="btn" type="button">Pokaż mapę Google</button><a href="{MAPA_LINK}" target="_blank" rel="noopener">Otwórz w Mapach Google</a></div></div>'''
+    return f'''<div class="mapa" style="height:{h}px" data-src="{MAPA}" data-tytul="Mapa dojazdu: Stary Kraszew, ul. Radzymińska 180"><div class="mapa-z"><p>ProlinkNET: {ADR}</p><button class="btn" type="button">Pokaż mapę Google</button><a href="{MAPA_LINK}" target="_blank" rel="noopener">Otwórz w Mapach Google</a></div></div>'''
 
 def usluga_ld(nazwa, opis, sc):
     return {'@type': 'Service', 'name': nazwa, 'description': opis, 'serviceType': nazwa, 'provider': {'@id': DOM + '/#firma'}, 'areaServed': {'@type': 'Country', 'name': 'Polska'}, 'url': DOM + '/' + sc}
 
 FAQ = [
-    ('Na jakim terenie działa ProlinkNET?', 'Biuro mamy w Zielonce pod Warszawą, a realizacje prowadzimy na terenie całej Polski, jako podwykonawca operatorów telekomunikacyjnych i dla innych zleceniodawców.'),
+    ('Na jakim terenie działa ProlinkNET?', 'Siedzibę mamy w Starym Kraszewie pod Warszawą, a realizacje prowadzimy na terenie całej Polski, jako podwykonawca operatorów telekomunikacyjnych i dla innych zleceniodawców.'),
     ('Jakie radiolinie budujecie?', 'Budujemy sieci radiowe typu punkt - punkt oraz punkt - wielopunkt (wielodostęp). Prowadzimy cały proces: wizję radiową, uzgodnienia, dokumentację, dostawę i montaż konstrukcji wsporczych, montaż anten i modułów ODU, instalację modułów IDU, konfigurację, pomiary transmisyjne i dokumentację powykonawczą.'),
     ('Czy wykonujecie spawanie i pomiary światłowodów?', 'Tak. Łączymy włókna mechanicznie (szybkozłączką) oraz spawaniem łukiem elektrycznym, spawarką Fujikura. Pomiary wykonujemy reflektometrem, zarówno dla nowych spawów, jak i istniejących połączeń w sieci.'),
     ('Czy projektujecie i montujecie konstrukcje pod anteny?', 'Tak. Projektujemy konstrukcje wsporcze, wykonujemy ich prefabrykację i montaż, także maszty, balustrady mostowe i rozwiązania niestandardowe. Wszystkie konstrukcje zabezpieczamy antykorozyjnie przez cynkowanie. Przy pracach na wysokości pracują u nas alpiniści.'),
     ('Czy zajmujecie się utrzymaniem istniejącej sieci?', 'Tak. Instalujemy dodatkowe urządzenia telekomunikacyjne, wykonujemy prace konfiguracyjne i serwisowe, konserwację zainstalowanych urządzeń oraz usuwamy awarie systemów radioliniowych.'),
-    ('Jak zapytać o realizację?', f'Najprościej wysłać formularz zapytania z lokalizacją, terminem i zakresem prac albo zadzwonić: {TEL1} lub {TEL2}. Można też napisać na {MAIL}.'),
+    ('Jak zapytać o realizację?', f'Najprościej wysłać formularz zapytania z lokalizacją, terminem i zakresem prac albo zadzwonić: {TEL1}. Można też napisać na {MAIL}.'),
 ]
 
 # ---------------------------------------------------------------- strony
@@ -230,7 +227,7 @@ def glowna(B, prod):
   <div class="hero-in"><div class="hero-tx">
     {LM}
     <h1>Radiolinie, światłowody i konstrukcje dla sieci telekomunikacyjnych</h1>
-    <p class="lead">Od 2003 roku, jako podwykonawca największych operatorów w Polsce, budujemy, wdrażamy i utrzymujemy infrastrukturę teleinformatyczną. Biuro w Zielonce pod Warszawą, realizacje w całej Polsce.</p>
+    <p class="lead">Od 2003 roku, jako podwykonawca największych operatorów w Polsce, budujemy, wdrażamy i utrzymujemy infrastrukturę teleinformatyczną. Siedziba w Starym Kraszewie pod Warszawą, realizacje w całej Polsce.</p>
     <div class="cta" data-mob-od><a class="btn" href="{B}kontakt/#zapytanie">Zapytaj o realizację {AR}</a><a class="btn ghost" href="#oferta">Zakres usług</a></div>
     <ul class="hero-fakty"><li>Od 2003 roku</li><li>Cała Polska</li><li>Podwykonawca operatorów</li></ul>
   </div></div>
@@ -288,8 +285,8 @@ def glowna(B, prod):
 </div></section>'''
     faq_ld = {'@type': 'FAQPage', 'mainEntity': [{'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in FAQ]}
     pre = f'<link rel="preload" as="image" href="{B}img/maszt-mob-kadr.webp" imagesrcset="{B}img/maszt-mob-kadr-460.webp 460w, {B}img/maszt-mob-kadr.webp 609w" imagesizes="100vw" media="(max-width:760px)" fetchpriority="high">\n<link rel="preload" as="image" href="{B}img/maszt-niebo-1169.webp" imagesrcset="{B}img/maszt-niebo-800.webp 800w, {B}img/maszt-niebo-1169.webp 1169w" imagesizes="100vw" media="(min-width:761px)" fetchpriority="high">\n'
-    return strona(B, prod, '', 'Radiolinie, światłowody, konstrukcje telekomunikacyjne | ProlinkNET Zielonka, cała Polska',
-                  'ProlinkNET: budowa i utrzymanie sieci telekomunikacyjnych od 2003 roku. Radiolinie punkt - punkt i punkt - wielopunkt, światłowody, konstrukcje stalowe. Zielonka k. Warszawy, cała Polska.',
+    return strona(B, prod, '', 'Radiolinie, światłowody, konstrukcje telekomunikacyjne | ProlinkNET, cała Polska',
+                  'ProlinkNET: budowa i utrzymanie sieci telekomunikacyjnych od 2003 roku. Radiolinie punkt - punkt i punkt - wielopunkt, światłowody, konstrukcje stalowe. Stary Kraszew k. Warszawy, cała Polska.',
                   tresc, ld=[faq_ld], preload=pre)
 
 PARTNERZY = [(2, 'Emitel', 200, 96), (3, 'NEC', 196, 53), (4, 'Plus', 189, 69), (5, 'Orange', 97, 98), (6, 'Netia', 185, 20), (7, 'Exatel', 181, 44)]
@@ -350,7 +347,7 @@ def swiatlowody(B, prod):
   <figure class="split-foto" style="margin:0;background:#fff;min-height:420px"><img src="{B}img/zlacza.webp" width="329" height="530" alt="Złącza światłowodowe" loading="lazy" decoding="async" style="object-fit:contain"></figure>
 </div></section>
 {pas(B, 'Masz sieć światłowodową do wykonania lub pomiaru?')}'''
-    opis = 'Spawanie światłowodów spawarką Fujikura, pomiary reflektometrem, układanie i instalacja sieci światłowodowych, także w tunelach. ProlinkNET, Zielonka i cała Polska.'
+    opis = 'Spawanie światłowodów spawarką Fujikura, pomiary reflektometrem, układanie i instalacja sieci światłowodowych, także w tunelach. ProlinkNET, cała Polska.'
     return strona(B, prod, 'swiatlowody/', 'Spawanie i pomiary światłowodów, instalacja sieci światłowodowych | ProlinkNET', opis, tresc, aktywne='swiatlowody/', okr=poz,
                   ld=[usluga_ld('Spawanie, pomiary i instalacja światłowodów', opis, 'swiatlowody/')], preload=pre_img(B, 'swiatlowody.webp'))
 
@@ -436,7 +433,7 @@ def ofirmie(B, prod):
 </div></section>
 <section class="sec"><div class="wrap tekst">
   {LM}<h2>Dane firmy</h2>
-  <p><strong>PROLINKNET Sp. z o.o.</strong><br>Siedziba: ul. Radzymińska 180, Stary Kraszew, 05-205 Klembów<br>Biuro: ul. Sowińskiego 4, 05-220 Zielonka<br>NIP 1251626648 · KRS 0000514566 · REGON 147306133</p>
+  <p><strong>PROLINKNET Sp. z o.o.</strong><br>ul. Radzymińska 180, 05-205 Stary Kraszew<br>NIP 1251626648 · KRS 0000514566 · REGON 147306133</p>
 </div></section>
 {pas(B, 'Masz obiekt do połączenia lub sieć do utrzymania?')}'''
     opis = 'ProlinkNET (PROLINKNET Sp. z o.o.): od 2003 roku podwykonawca operatorów w budowie i utrzymaniu sieci GSM/UMTS/LTE. Atuty, partnerzy: Emitel, NEC, Plus, Orange, Netia, Exatel.'
@@ -451,13 +448,13 @@ def kontakt(B, prod):
     {LM}<h1 style="font-size:clamp(34px,4vw,54px)">Kontakt</h1>
     <p style="margin-top:16px">Zapraszamy do zapoznania się z naszą ofertą kompleksowych usług telekomunikacyjnych. Opisz obiekt, lokalizację i zakres prac, a odpowiemy z propozycją realizacji.</p>
     {dane_kontaktowe()}
-    <p class="rej" style="color:var(--mut);font-size:14px">PROLINKNET Sp. z o.o., siedziba: ul. Radzymińska 180, Stary Kraszew, 05-205 Klembów · NIP 1251626648 · KRS 0000514566 · REGON 147306133</p>
+    <p class="rej" style="color:var(--mut);font-size:14px">PROLINKNET Sp. z o.o. · NIP 1251626648 · KRS 0000514566 · REGON 147306133</p>
   </div>
   {formularz(B, prod, 'zapytanie')}
 </div></section>
 <section class="sec" style="padding-top:0;background:var(--bg2)"><div class="wrap">{mapa(420)}</div></section>'''
-    opis = 'Kontakt z ProlinkNET: tel. 509 510 420, 22 257 85 22, biuro@prolinknet.pl, biuro w Zielonce, ul. Sowińskiego 4. Formularz zapytania o radiolinie, światłowody i konstrukcje.'
-    return strona(B, prod, 'kontakt/', 'Kontakt - ProlinkNET Zielonka, zapytanie o realizację', opis, tresc, aktywne='kontakt/', okr=poz,
+    opis = 'Kontakt z ProlinkNET: tel. 733 800 337, biuro@prolinknet.pl, ul. Radzymińska 180, 05-205 Stary Kraszew. Formularz zapytania o radiolinie, światłowody i konstrukcje.'
+    return strona(B, prod, 'kontakt/', 'Kontakt - ProlinkNET, zapytanie o realizację', opis, tresc, aktywne='kontakt/', okr=poz,
                   ld=[{'@type': 'ContactPage', 'url': DOM + '/kontakt/', 'about': {'@id': DOM + '/#firma'}}])
 
 def polityka(B, prod):
@@ -467,7 +464,7 @@ def polityka(B, prod):
   {LM}<h1 style="font-size:clamp(32px,3.6vw,48px)">Polityka prywatności</h1>
   <p style="margin-top:18px">Ta strona opisuje, jakie dane przetwarzamy w związku z korzystaniem ze strony prolinknet.pl i w jakim celu.</p>
   <h2>Administrator danych</h2>
-  <p>Administratorem danych jest PROLINKNET Sp. z o.o. z siedzibą w Starym Kraszewie, ul. Radzymińska 180, 05-205 Klembów, NIP 1251626648, KRS 0000514566, REGON 147306133. Kontakt w sprawach danych osobowych: <a href="mailto:{MAIL}">{MAIL}</a>, tel. <a href="tel:{TEL1H}">{TEL1}</a>.</p>
+  <p>Administratorem danych jest PROLINKNET Sp. z o.o. z siedzibą w Starym Kraszewie, ul. Radzymińska 180, 05-205 Stary Kraszew, NIP 1251626648, KRS 0000514566, REGON 147306133. Kontakt w sprawach danych osobowych: <a href="mailto:{MAIL}">{MAIL}</a>, tel. <a href="tel:{TEL1H}">{TEL1}</a>.</p>
   <h2>Formularz zapytania i korespondencja</h2>
   <p>Dane podane w formularzu (imię i nazwisko lub nazwa firmy, telefon, adres e-mail, treść zapytania) oraz w korespondencji przetwarzamy w celu odpowiedzi na zapytanie i przygotowania oferty (art. 6 ust. 1 lit. b RODO), a także w celu prowadzenia korespondencji i ewentualnego dochodzenia roszczeń (art. 6 ust. 1 lit. f RODO). Podanie danych jest dobrowolne, ale bez telefonu lub adresu e-mail nie możemy odpowiedzieć.</p>
   <p>Po wysłaniu formularza na podany adres e-mail wysyłamy automatyczne potwierdzenie otrzymania zapytania. Dane przechowujemy przez czas potrzebny do prowadzenia korespondencji i realizacji ewentualnej umowy, a następnie przez okres przedawnienia roszczeń.</p>
@@ -498,13 +495,12 @@ STRONY = [('', glowna, '1.0'), ('radiolinie/', radiolinie, '0.9'), ('swiatlowody
 
 LLMS = f'''# ProlinkNET (PROLINKNET Sp. z o.o.)
 
-> Firma telekomunikacyjna z Zielonki pod Warszawą, działająca od 2003 roku na terenie całej Polski jako podwykonawca operatorów. Budowa i utrzymanie infrastruktury teleinformatycznej: radiolinie punkt - punkt i punkt - wielopunkt, światłowody, konstrukcje stalowe i maszty, utrzymanie sieci oraz outsourcing.
+> Firma telekomunikacyjna ze Starego Kraszewa pod Warszawą, działająca od 2003 roku na terenie całej Polski jako podwykonawca operatorów. Budowa i utrzymanie infrastruktury teleinformatycznej: radiolinie punkt - punkt i punkt - wielopunkt, światłowody, konstrukcje stalowe i maszty, utrzymanie sieci oraz outsourcing.
 
 ## Dane kontaktowe
-- Telefon: {TEL1}, {TEL2}
+- Telefon: {TEL1}
 - E-mail: {MAIL}
-- Biuro: ul. Sowińskiego 4, 05-220 Zielonka
-- Siedziba: ul. Radzymińska 180, Stary Kraszew, 05-205 Klembów
+- Adres: ul. Radzymińska 180, 05-205 Stary Kraszew
 - NIP 1251626648, KRS 0000514566, REGON 147306133
 - Obszar działania: cała Polska
 

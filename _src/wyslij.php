@@ -15,8 +15,8 @@ define('ODBIORCA', 'biuro@prolinknet.pl');          // tu przychodzą zapytania
 define('NADAWCA', 'biuro@prolinknet.pl');           // From: ISTNIEJĄCA skrzynka w domenie prolinknet.pl (nazwa.pl)
 define('NADAWCA_NAZWA', 'Strona prolinknet.pl');
 define('FIRMA', 'ProlinkNET');
-define('TELEFON', '509 510 420');
-define('TELEFON_LINK', '+48509510420');
+define('TELEFON', '733 800 337');
+define('TELEFON_LINK', '+48733800337');
 define('TELEFON2', '22 257 85 22');
 define('ADRES_STRONY', 'https://prolinknet.pl/');
 define('DOMENA', 'prolinknet.pl');
@@ -249,8 +249,8 @@ function szkielet($tytul, $srodek) {
         . '<tr><td style="background:#10BBF1;height:4px;line-height:4px;font-size:0">&nbsp;</td></tr>'
         . $srodek
         . '<tr><td style="padding:18px 28px 24px;border-top:1px solid #D6DEE8;' . $F . 'font-size:13px;line-height:1.6;color:#33415F">'
-        . '<strong style="color:#0E1B3D">PROLINKNET Sp. z o.o.</strong> &middot; radiolinie, światłowody, konstrukcje stalowe, utrzymanie sieci<br>Biuro: ul. Sowińskiego 4, 05-220 Zielonka<br>'
-        . '<a href="tel:' . TELEFON_LINK . '" style="color:#0E1B3D">' . TELEFON . '</a> &middot; <a href="tel:+48222578522" style="color:#0E1B3D">' . TELEFON2 . '</a> &middot; <a href="mailto:' . ODBIORCA . '" style="color:#0E1B3D">' . ODBIORCA . '</a> &middot; '
+        . '<strong style="color:#0E1B3D">PROLINKNET Sp. z o.o.</strong> &middot; radiolinie, światłowody, konstrukcje stalowe, utrzymanie sieci<br>ul. Radzymińska 180, 05-205 Stary Kraszew<br>'
+        . '<a href="tel:' . TELEFON_LINK . '" style="color:#0E1B3D">' . TELEFON . '</a> &middot; <a href="mailto:' . ODBIORCA . '" style="color:#0E1B3D">' . ODBIORCA . '</a> &middot; '
         . '<a href="' . ADRES_STRONY . '" style="color:#0E1B3D">prolinknet.pl</a></td></tr>'
         . '</table></td></tr></table></body></html>';
 }
@@ -343,11 +343,11 @@ if ($email !== '' && ($zOk || $DEV !== '')) {
             . '<p style="margin:0 0 12px">Dzień dobry,<br>otrzymaliśmy zapytanie wysłane przez formularz na stronie prolinknet.pl. Zapoznamy się z opisem i odpowiemy najszybciej, jak to możliwe.</p></td></tr>'
             . '<tr><td style="padding:0 28px 8px"><div style="border-left:5px solid #10BBF1;padding:12px 16px;background:#EEF3F7;font:15px/1.6 Arial,Helvetica,sans-serif;color:#0E1B3D">'
             . '<strong>Zakres prac:</strong> ' . h($zakres) . '<br><strong>Opis:</strong> ' . nl2br(h(function_exists('mb_strimwidth') ? mb_strimwidth($tresc, 0, 600, '...', 'UTF-8') : $tresc)) . '</div>'
-            . '<p style="margin:14px 0 0;font:15px/1.6 Arial,Helvetica,sans-serif;color:#0E1B3D">W pilnej sprawie prosimy dzwonić: <a href="tel:' . TELEFON_LINK . '" style="color:#0E1B3D;font-weight:bold">' . TELEFON . '</a> lub <a href="tel:+48222578522" style="color:#0E1B3D;font-weight:bold">' . TELEFON2 . '</a>.</p></td></tr>'
+            . '<p style="margin:14px 0 0;font:15px/1.6 Arial,Helvetica,sans-serif;color:#0E1B3D">W pilnej sprawie prosimy dzwonić: <a href="tel:' . TELEFON_LINK . '" style="color:#0E1B3D;font-weight:bold">' . TELEFON . '</a>.</p></td></tr>'
             . '<tr><td style="padding:4px 28px 24px">' . przycisk(ADRES_STRONY . '#oferta', 'Zakres naszych usług') . '</td></tr>';
         $h2 = szkielet('Dziękujemy za zapytanie', $s2);
         $t2 = "Dziękujemy za zapytanie.\r\n\r\nOtrzymaliśmy zapytanie wysłane przez formularz na stronie prolinknet.pl. Zapoznamy się z opisem i odpowiemy najszybciej, jak to możliwe.\r\n\r\n"
-            . "Zakres prac: $zakres\r\nW pilnej sprawie prosimy dzwonić: " . TELEFON . " lub " . TELEFON2 . ".\r\n\r\nPROLINKNET Sp. z o.o., biuro: ul. Sowińskiego 4, 05-220 Zielonka\r\n" . ADRES_STRONY . "\r\n";
+            . "Zakres prac: $zakres\r\nW pilnej sprawie prosimy dzwonić: " . TELEFON . ".\r\n\r\nPROLINKNET Sp. z o.o., ul. Radzymińska 180, 05-205 Stary Kraszew\r\n" . ADRES_STRONY . "\r\n";
         wyslij_mail($email, $imie, 'ProlinkNET: otrzymaliśmy Twoje zapytanie', $h2, $t2, ODBIORCA, FIRMA, true);
     }
 }

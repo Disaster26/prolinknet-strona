@@ -75,8 +75,8 @@
       e.preventDefault(); bt.disabled=true;
       fetch(f.getAttribute('action'),{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'},credentials:'same-origin'})
         .then(function(r){return r.json();})
-        .then(function(d){bt.disabled=false;if(d&&d.success){f.reset();pokaz(KOMUNIKAT_OK,'ok');zn.value='';raz=false;}else pokaz((d&&d.komunikat)||'Nie udało się wysłać. Prosimy zadzwonić: 509 510 420.','err');})
-        .catch(function(){bt.disabled=false;pokaz('Nie udało się wysłać. Prosimy zadzwonić: 509 510 420 albo napisać na biuro@prolinknet.pl.','err');});
+        .then(function(d){bt.disabled=false;if(d&&d.success){f.reset();pokaz(KOMUNIKAT_OK,'ok');zn.value='';raz=false;}else pokaz((d&&d.komunikat)||'Nie udało się wysłać. Prosimy zadzwonić: 733 800 337.','err');})
+        .catch(function(){bt.disabled=false;pokaz('Nie udało się wysłać. Prosimy zadzwonić: 733 800 337 albo napisać na biuro@prolinknet.pl.','err');});
     });
   });
 })();
