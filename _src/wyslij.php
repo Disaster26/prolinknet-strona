@@ -17,7 +17,6 @@ define('NADAWCA_NAZWA', 'Strona prolinknet.pl');
 define('FIRMA', 'ProlinkNET');
 define('TELEFON', '733 800 337');
 define('TELEFON_LINK', '+48733800337');
-define('TELEFON2', '22 257 85 22');
 define('ADRES_STRONY', 'https://prolinknet.pl/');
 define('DOMENA', 'prolinknet.pl');
 define('DKIM_SELEKTOR', 'dm');

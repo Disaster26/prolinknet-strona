@@ -10,7 +10,6 @@ WER = '1'                                  # zmienić po edycji style.css/app.js
 DZIS = datetime.date.today().isoformat()
 
 TEL1, TEL1H = '733 800 337', '+48733800337'
-TEL2, TEL2H = '22 257 85 22', '+48222578522'
 MAIL = 'biuro@prolinknet.pl'
 ADR = 'ul. Radzymińska 180, 05-205 Stary Kraszew'
 MAPA = 'https://www.google.com/maps?q=Radzymi%C5%84ska+180,+05-205+Stary+Kraszew&z=15&output=embed'
@@ -257,7 +256,7 @@ def glowna(B, prod):
   <div>
     {LM}<h2>Doświadczenie zdobyte przy sieciach operatorów</h2>
     <p>Firma ProlinkNET powstała w 2003 roku. Głównym zakresem naszego działania są usługi techniczne w branży telekomunikacyjnej. Wspieramy wdrażanie nowych rozwiązań i bierzemy udział w rozbudowie istniejącej infrastruktury.</p>
-    <p>Firma posiada oddział w Warszawie, lecz teren naszego działania rozciąga się na obszar całej Polski. Nasze największe atuty to:</p>
+    <p>Siedzibę mamy w Starym Kraszewie pod Warszawą, a teren naszego działania obejmuje całą Polskę. Nasze największe atuty to:</p>
     <ul class="atuty"><li>doświadczenie w planowaniu i realizacji infrastruktury teleinformatycznej,</li><li>doświadczenie we współpracy z instytucjami regulującymi rynek telefonii w kwestiach licencji dla operatorów,</li><li>profesjonalizm i doświadczenie naszych pracowników.</li></ul>
     <p style="margin-top:26px"><a class="btn ghost" href="{B}o-firmie/">O firmie {AR}</a></p>
   </div>
@@ -415,7 +414,7 @@ def ofirmie(B, prod):
 <section class="sec"><div class="wrap split">
   <div class="tekst">
     {LM}<h2>ProlinkNET</h2>
-    <p>Firma ProlinkNET powstała w 2003 roku. Głównym zakresem naszego działania są usługi techniczne w branży telekomunikacyjnej. Wspieramy wdrażanie nowych rozwiązań i bierzemy udział w rozbudowie istniejącej infrastruktury. Firma posiada oddział w Warszawie, lecz teren naszego działania rozciąga się na obszar całej Polski.</p>
+    <p>Firma ProlinkNET powstała w 2003 roku. Głównym zakresem naszego działania są usługi techniczne w branży telekomunikacyjnej. Wspieramy wdrażanie nowych rozwiązań i bierzemy udział w rozbudowie istniejącej infrastruktury. Siedzibę mamy w Starym Kraszewie pod Warszawą, a teren naszego działania obejmuje całą Polskę.</p>
     <p>W skład naszej firmy wchodzą wykwalifikowani i doświadczeni pracownicy, którzy odbyli szereg szkoleń teoretycznych i praktycznych w zakresie prac instalacyjno-uruchomieniowych i integracyjnych dotyczących usług telekomunikacyjnych.</p>
     <p>Jeśli szukają Państwo wszechstronnych rozwiązań w zakresie budowy i utrzymania sieci GSM/UMTS/LTE, znaleźli Państwo firmę dysponującą kompetentnym personelem i wieloletnim doświadczeniem w tej dziedzinie. Pracując dla operatorów telefonii stacjonarnej i komórkowej na rynku krajowym, zdobyliśmy szerokie doświadczenie w swojej branży.</p>
     <p>Klienci, którzy nam zaufają, mogą mieć pewność, że dzięki naszej wiedzy, doświadczeniu i profesjonalizmowi z sukcesem zrealizują swoje cele operacyjne.</p>
